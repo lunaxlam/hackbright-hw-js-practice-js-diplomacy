@@ -24,9 +24,14 @@ function validateText(evt) {
     const formFeedback = document.querySelector('#formFeedback');
 
     // Validate the input in the text input with id=number-input
+    // Will need to input cast as a number
+    // If the input is NaN, it will return as such 
     const input = Number(document.querySelector('#number-input').value);
+    
+    // To test in console
     console.log('Input', input)
     console.log('Type of', typeof 'input')
+    
     // If input is not a number or >= 10, change element with id=formFeedback
     // to say 'Please enter a smaller number'.
     // Otherwise, change text to 'You are good to go!'
